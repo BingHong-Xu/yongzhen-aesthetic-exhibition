@@ -1,44 +1,18 @@
 /**
  * 永貞國小114跨領域美感教育成果展 - 展覽資料庫
- * 更新於 2026-10-20T23:07:25.929Z
+ * 更新於 2026-10-20T23:34:01.445Z
  * 個資清理：0 手機、0 Email
- * 圖片清理：無重複、無 QRcode
- * 新增：Facebook 徐秉鴻老師「114學年度跨域美感教育季成果分享會」24張高解析相片
+ * 圖片清理：無重複、無 QRcode（已主動移除 1 筆 Canva 連結 QRcode 照片）
+ * 最新擴充：Facebook 徐秉鴻老師「【多元×跨領域學習成果展】」25張高解析教學與成果相片
  */
 window.EXHIBIT_DATA = {
   stats: {
-    totalWorks: 338,
-    categoriesCount: 19,
+    totalWorks: 363,
+    categoriesCount: 20,
     videosCount: 4
   },
-  videos: [
-  {
-    "title": "卓越領航計畫小發表 · 精彩花絮篇 (Reels)",
-    "fileName": "fb_reel_showcase_highlight.mp4",
-    "relPath": "assets/videos/fb_reel_showcase_highlight.mp4",
-    "thumbnail": "assets/images/fb_reel_thumbnail.jpg",
-    "sizeMB": "4.85"
-  },
-  {
-    "title": "正四面體光影實驗實錄",
-    "fileName": "tetrahedron_light_experiment.mp4",
-    "relPath": "assets/videos/tetrahedron_light_experiment.mp4",
-    "sizeMB": "4.96"
-  },
-  {
-    "title": "北美館《物質世界》前導觀展紀錄",
-    "fileName": "tfam_material_extensions.mp4",
-    "relPath": "assets/videos/tfam_material_extensions.mp4",
-    "sizeMB": "9.80"
-  },
-  {
-    "title": "永貞六甲多元智能 x SDGs 成果紀錄",
-    "fileName": "yongzhen_sdgs_learning.mp4",
-    "relPath": "assets/videos/yongzhen_sdgs_learning.mp4",
-    "sizeMB": "38.27"
-  }
-],
-  gallery: [
+  videos: [],
+  items: [
   {
     "id": "poster_1",
     "categoryId": "poster",
@@ -4772,6 +4746,356 @@ window.EXHIBIT_DATA = {
     "categoryTag": "成果專題記錄",
     "description": "記錄教育部跨領域美感教育卓越領航計畫團隊之共同耕耘與璀璨成果。",
     "displayOrder": 24
+  },
+  {
+    "id": "fb_diverse_1",
+    "categoryId": "fb_diverse_showcase",
+    "categoryName": "多元跨域學習成果(FB)",
+    "folder": "20260609多元×跨領域學習成果展(FB帖文)",
+    "originalName": "diverse_showcase_01.jpg",
+    "fileName": "diverse_showcase_01.jpg",
+    "relPath": "assets/images/fb_diverse_showcase/diverse_showcase_01.jpg",
+    "size": 352310,
+    "title": "永貞六甲太空主題班服與榮耀獎盃大合照",
+    "categoryTag": "成果專題記錄",
+    "description": "六甲孩子穿著太空主題班服，懷抱閃耀獎盃，高舉「築夢踏實、夢想起飛」信念，凝聚全場目光。",
+    "displayOrder": 1
+  },
+  {
+    "id": "fb_diverse_2",
+    "categoryId": "fb_diverse_showcase",
+    "categoryName": "多元跨域學習成果(FB)",
+    "folder": "20260609多元×跨領域學習成果展(FB帖文)",
+    "originalName": "diverse_showcase_02.jpg",
+    "fileName": "diverse_showcase_02.jpg",
+    "relPath": "assets/images/fb_diverse_showcase/diverse_showcase_02.jpg",
+    "size": 218800,
+    "title": "「築夢踏實·夢想起飛」六甲親師生齊聚成果展",
+    "categoryTag": "成果專題記錄",
+    "description": "親師生熱情合影，校長與行政夥伴全心支持，見證一年多來跨領域探索的豐碩結晶。",
+    "displayOrder": 2
+  },
+  {
+    "id": "fb_diverse_3",
+    "categoryId": "fb_diverse_showcase",
+    "categoryName": "多元跨域學習成果(FB)",
+    "folder": "20260609多元×跨領域學習成果展(FB帖文)",
+    "originalName": "diverse_showcase_03.jpg",
+    "fileName": "diverse_showcase_03.jpg",
+    "relPath": "assets/images/fb_diverse_showcase/diverse_showcase_03.jpg",
+    "size": 308746,
+    "title": "幾何光影立體燈飾於暗室中璀璨綻放",
+    "categoryTag": "成果專題記錄",
+    "description": "孩子們親手打造的幾何多面體燈飾在黑暗中透出絢麗光芒，展現數感結構與視覺美學的極致融會。",
+    "displayOrder": 3
+  },
+  {
+    "id": "fb_diverse_4",
+    "categoryId": "fb_diverse_showcase",
+    "categoryName": "多元跨域學習成果(FB)",
+    "folder": "20260609多元×跨領域學習成果展(FB帖文)",
+    "originalName": "diverse_showcase_04.jpg",
+    "fileName": "diverse_showcase_04.jpg",
+    "relPath": "assets/images/fb_diverse_showcase/diverse_showcase_04.jpg",
+    "size": 345342,
+    "title": "PBL幾何美學實踐：數學立體多面體光飾特寫",
+    "categoryTag": "成果專題記錄",
+    "description": "結合數學幾何、透光卡典西德與立體結構的PBL成果，色彩斑斕透亮，宛若微型星空。",
+    "displayOrder": 4
+  },
+  {
+    "id": "fb_diverse_5",
+    "categoryId": "fb_diverse_showcase",
+    "categoryName": "多元跨域學習成果(FB)",
+    "folder": "20260609多元×跨領域學習成果展(FB帖文)",
+    "originalName": "diverse_showcase_05.jpg",
+    "fileName": "diverse_showcase_05.jpg",
+    "relPath": "assets/images/fb_diverse_showcase/diverse_showcase_05.jpg",
+    "size": 217704,
+    "title": "孩子們自信展示親手打造之幾何星空燈罩",
+    "categoryTag": "成果專題記錄",
+    "description": "小藝術家眼神洋溢著自信與成就感，親切向參觀者分享結構折曲與對稱美學的發現。",
+    "displayOrder": 5
+  },
+  {
+    "id": "fb_diverse_6",
+    "categoryId": "fb_diverse_showcase",
+    "categoryName": "多元跨域學習成果(FB)",
+    "folder": "20260609多元×跨領域學習成果展(FB帖文)",
+    "originalName": "diverse_showcase_06.jpg",
+    "fileName": "diverse_showcase_06.jpg",
+    "relPath": "assets/images/fb_diverse_showcase/diverse_showcase_06.jpg",
+    "size": 345895,
+    "title": "彩色卡典西德幾何鑲嵌窗貼日光映照實景",
+    "categoryTag": "成果專題記錄",
+    "description": "一片片幾何窗貼在窗邊排開，當陽光穿透卡典西德色塊，整個課堂都充滿了對美感的感動。",
+    "displayOrder": 6
+  },
+  {
+    "id": "fb_diverse_7",
+    "categoryId": "fb_diverse_showcase",
+    "categoryName": "多元跨域學習成果(FB)",
+    "folder": "20260609多元×跨領域學習成果展(FB帖文)",
+    "originalName": "diverse_showcase_07.jpg",
+    "fileName": "diverse_showcase_07.jpg",
+    "relPath": "assets/images/fb_diverse_showcase/diverse_showcase_07.jpg",
+    "size": 304979,
+    "title": "陽光灑落教堂般彩繪幾何窗花下的美感課堂",
+    "categoryTag": "成果專題記錄",
+    "description": "日光傾瀉於彩色幾何格點窗花，投射在桌面與地板，營造神聖典雅如教堂彩繪玻璃的光影美景。",
+    "displayOrder": 7
+  },
+  {
+    "id": "fb_diverse_8",
+    "categoryId": "fb_diverse_showcase",
+    "categoryName": "多元跨域學習成果(FB)",
+    "folder": "20260609多元×跨領域學習成果展(FB帖文)",
+    "originalName": "diverse_showcase_08.jpg",
+    "fileName": "diverse_showcase_08.jpg",
+    "relPath": "assets/images/fb_diverse_showcase/diverse_showcase_08.jpg",
+    "size": 301850,
+    "title": "小藝術家專注解說立體幾何燈飾製作工法",
+    "categoryTag": "成果專題記錄",
+    "description": "從小組討論、構圖設計到動手實踐，孩子條理分明地闡述幾何比例、角度測量與美感配色的關聯。",
+    "displayOrder": 8
+  },
+  {
+    "id": "fb_diverse_9",
+    "categoryId": "fb_diverse_showcase",
+    "categoryName": "多元跨域學習成果(FB)",
+    "folder": "20260609多元×跨領域學習成果展(FB帖文)",
+    "originalName": "diverse_showcase_09.jpg",
+    "fileName": "diverse_showcase_09.jpg",
+    "relPath": "assets/images/fb_diverse_showcase/diverse_showcase_09.jpg",
+    "size": 296532,
+    "title": "跨領域美感成果展舞台：榮耀獎盃與自主探索結晶",
+    "categoryTag": "成果專題記錄",
+    "description": "舞台陳列著團隊共同榮譽獎盃與一年來的探索紀錄，見證永貞國小跨領域美學深耕的足跡。",
+    "displayOrder": 9
+  },
+  {
+    "id": "fb_diverse_10",
+    "categoryId": "fb_diverse_showcase",
+    "categoryName": "多元跨域學習成果(FB)",
+    "folder": "20260609多元×跨領域學習成果展(FB帖文)",
+    "originalName": "diverse_showcase_10.jpg",
+    "fileName": "diverse_showcase_10.jpg",
+    "relPath": "assets/images/fb_diverse_showcase/diverse_showcase_10.jpg",
+    "size": 283334,
+    "title": "幾何多面體結構骨架與立體美學組合呈現",
+    "categoryTag": "成果專題記錄",
+    "description": "精準的幾何摺線與精緻的透光開孔，讓理性數理與感性藝術在手作中完美交織。",
+    "displayOrder": 10
+  },
+  {
+    "id": "fb_diverse_11",
+    "categoryId": "fb_diverse_showcase",
+    "categoryName": "多元跨域學習成果(FB)",
+    "folder": "20260609多元×跨領域學習成果展(FB帖文)",
+    "originalName": "diverse_showcase_11.jpg",
+    "fileName": "diverse_showcase_11.jpg",
+    "relPath": "assets/images/fb_diverse_showcase/diverse_showcase_11.jpg",
+    "size": 366101,
+    "title": "溫暖光影交織下的六甲孩子幸福微笑",
+    "categoryTag": "成果專題記錄",
+    "description": "光影柔和映照在孩子們的笑靨上，記錄下童年最純粹、最驕傲的學習高光時刻。",
+    "displayOrder": 11
+  },
+  {
+    "id": "fb_diverse_12",
+    "categoryId": "fb_diverse_showcase",
+    "categoryName": "多元跨域學習成果(FB)",
+    "folder": "20260609多元×跨領域學習成果展(FB帖文)",
+    "originalName": "diverse_showcase_12.jpg",
+    "fileName": "diverse_showcase_12.jpg",
+    "relPath": "assets/images/fb_diverse_showcase/diverse_showcase_12.jpg",
+    "size": 359156,
+    "title": "校長與師長親臨肯定：無私支持點燃創意火花",
+    "categoryTag": "成果專題記錄",
+    "description": "師長們躬身傾聽小藝術家解說，肯定其批判思考、自主探究與跨域表達能力。",
+    "displayOrder": 12
+  },
+  {
+    "id": "fb_diverse_13",
+    "categoryId": "fb_diverse_showcase",
+    "categoryName": "多元跨域學習成果(FB)",
+    "folder": "20260609多元×跨領域學習成果展(FB帖文)",
+    "originalName": "diverse_showcase_13.jpg",
+    "fileName": "diverse_showcase_13.jpg",
+    "relPath": "assets/images/fb_diverse_showcase/diverse_showcase_13.jpg",
+    "size": 342581,
+    "title": "自主學習與美感思維深度對話展示攤位",
+    "categoryTag": "成果專題記錄",
+    "description": "攤位前人潮絡繹不絕，參觀家長與低年級學弟妹熱烈互動，美感素養在校園自然流動。",
+    "displayOrder": 13
+  },
+  {
+    "id": "fb_diverse_14",
+    "categoryId": "fb_diverse_showcase",
+    "categoryName": "多元跨域學習成果(FB)",
+    "folder": "20260609多元×跨領域學習成果展(FB帖文)",
+    "originalName": "diverse_showcase_14.jpg",
+    "fileName": "diverse_showcase_14.jpg",
+    "relPath": "assets/images/fb_diverse_showcase/diverse_showcase_14.jpg",
+    "size": 353890,
+    "title": "幾何星空搬進教室：立體燈飾環景陳設",
+    "categoryTag": "成果專題記錄",
+    "description": "立體多面體燈飾成組綻放，將溫暖的幾何星空意象完整重現於展示空間中。",
+    "displayOrder": 14
+  },
+  {
+    "id": "fb_diverse_15",
+    "categoryId": "fb_diverse_showcase",
+    "categoryName": "多元跨域學習成果(FB)",
+    "folder": "20260609多元×跨領域學習成果展(FB帖文)",
+    "originalName": "diverse_showcase_15.jpg",
+    "fileName": "diverse_showcase_15.jpg",
+    "relPath": "assets/images/fb_diverse_showcase/diverse_showcase_15.jpg",
+    "size": 277792,
+    "title": "色彩斑斕的立體造型與幾何光影層次感",
+    "categoryTag": "成果專題記錄",
+    "description": "冷暖色調巧妙配比，在不同透光層次下展現豐富的光影梯度與視覺張力。",
+    "displayOrder": 15
+  },
+  {
+    "id": "fb_diverse_16",
+    "categoryId": "fb_diverse_showcase",
+    "categoryName": "多元跨域學習成果(FB)",
+    "folder": "20260609多元×跨領域學習成果展(FB帖文)",
+    "originalName": "diverse_showcase_16.jpg",
+    "fileName": "diverse_showcase_16.jpg",
+    "relPath": "assets/images/fb_diverse_showcase/diverse_showcase_16.jpg",
+    "size": 273819,
+    "title": "親師生凝聚力：現場滿溢愛與溫暖的校園文化",
+    "categoryTag": "成果專題記錄",
+    "description": "記錄現場滿滿的愛與向心力，展現永貞國小最純粹、溫暖且充滿活力的校園美學文化。",
+    "displayOrder": 16
+  },
+  {
+    "id": "fb_diverse_17",
+    "categoryId": "fb_diverse_showcase",
+    "categoryName": "多元跨域學習成果(FB)",
+    "folder": "20260609多元×跨領域學習成果展(FB帖文)",
+    "originalName": "diverse_showcase_17.jpg",
+    "fileName": "diverse_showcase_17.jpg",
+    "relPath": "assets/images/fb_diverse_showcase/diverse_showcase_17.jpg",
+    "size": 356193,
+    "title": "六甲學子手持幾何作品自信迎向閃耀未來",
+    "categoryTag": "成果專題記錄",
+    "description": "手捧精心製作的燈飾作品，孩子們在成果舞台上綻放無可取代的自信風采。",
+    "displayOrder": 17
+  },
+  {
+    "id": "fb_diverse_18",
+    "categoryId": "fb_diverse_showcase",
+    "categoryName": "多元跨域學習成果(FB)",
+    "folder": "20260609多元×跨領域學習成果展(FB帖文)",
+    "originalName": "diverse_showcase_18.jpg",
+    "fileName": "diverse_showcase_18.jpg",
+    "relPath": "assets/images/fb_diverse_showcase/diverse_showcase_18.jpg",
+    "size": 280078,
+    "title": "空間美化巧思：窗櫺彩色幾何貼飾序列排開",
+    "categoryTag": "成果專題記錄",
+    "description": "延續蒙德里安與卡典西德技法，將教室窗框轉化為日常隨時可沉浸的美感光影畫布。",
+    "displayOrder": 18
+  },
+  {
+    "id": "fb_diverse_19",
+    "categoryId": "fb_diverse_showcase",
+    "categoryName": "多元跨域學習成果(FB)",
+    "folder": "20260609多元×跨領域學習成果展(FB帖文)",
+    "originalName": "diverse_showcase_19.jpg",
+    "fileName": "diverse_showcase_19.jpg",
+    "relPath": "assets/images/fb_diverse_showcase/diverse_showcase_19.jpg",
+    "size": 344575,
+    "title": "微光中透出溫暖幾何投影：小藝術家的光之魔術",
+    "categoryTag": "成果專題記錄",
+    "description": "暗室點燈瞬間全場屏息驚嘆，光線透過立體幾何切面投射出繁星般的唯美幾何影子。",
+    "displayOrder": 19
+  },
+  {
+    "id": "fb_diverse_20",
+    "categoryId": "fb_diverse_showcase",
+    "categoryName": "多元跨域學習成果(FB)",
+    "folder": "20260609多元×跨領域學習成果展(FB帖文)",
+    "originalName": "diverse_showcase_20.jpg",
+    "fileName": "diverse_showcase_20.jpg",
+    "relPath": "assets/images/fb_diverse_showcase/diverse_showcase_20.jpg",
+    "size": 356065,
+    "title": "多面體燈罩精緻細節：折線、黏貼與透光度調和",
+    "categoryTag": "成果專題記錄",
+    "description": "近距離特寫立體骨架的工整接合與色紙鑲嵌工藝，呈現小藝術家對品質的嚴謹追求。",
+    "displayOrder": 20
+  },
+  {
+    "id": "fb_diverse_21",
+    "categoryId": "fb_diverse_showcase",
+    "categoryName": "多元跨域學習成果(FB)",
+    "folder": "20260609多元×跨領域學習成果展(FB帖文)",
+    "originalName": "diverse_showcase_21.jpg",
+    "fileName": "diverse_showcase_21.jpg",
+    "relPath": "assets/images/fb_diverse_showcase/diverse_showcase_21.jpg",
+    "size": 285586,
+    "title": "專家師長聆聽孩子生動說課與自主提問",
+    "categoryTag": "成果專題記錄",
+    "description": "孩子落落大方回答現場專家提問，展現深度理解、自我反思與卓越的表達素養。",
+    "displayOrder": 21
+  },
+  {
+    "id": "fb_diverse_22",
+    "categoryId": "fb_diverse_showcase",
+    "categoryName": "多元跨域學習成果(FB)",
+    "folder": "20260609多元×跨領域學習成果展(FB帖文)",
+    "originalName": "diverse_showcase_22.jpg",
+    "fileName": "diverse_showcase_22.jpg",
+    "relPath": "assets/images/fb_diverse_showcase/diverse_showcase_22.jpg",
+    "size": 375892,
+    "title": "探究歷程記錄展板：從二維草圖到三維光影",
+    "categoryTag": "成果專題記錄",
+    "description": "完整收錄學習歷程檔案與設計草稿，體現歷程性評量與學生主體性的教育真諦。",
+    "displayOrder": 22
+  },
+  {
+    "id": "fb_diverse_23",
+    "categoryId": "fb_diverse_showcase",
+    "categoryName": "多元跨域學習成果(FB)",
+    "folder": "20260609多元×跨領域學習成果展(FB帖文)",
+    "originalName": "diverse_showcase_23.jpg",
+    "fileName": "diverse_showcase_23.jpg",
+    "relPath": "assets/images/fb_diverse_showcase/diverse_showcase_23.jpg",
+    "size": 361869,
+    "title": "畢業成果發表榮耀合影：為勇敢追夢的小太空人喝采",
+    "categoryTag": "成果專題記錄",
+    "description": "全班歡呼慶祝成果展圓滿落幕，師長共同為這群勇敢追夢、閃閃發光的小太空人們感到驕傲。",
+    "displayOrder": 23
+  },
+  {
+    "id": "fb_diverse_24",
+    "categoryId": "fb_diverse_showcase",
+    "categoryName": "多元跨域學習成果(FB)",
+    "folder": "20260609多元×跨領域學習成果展(FB帖文)",
+    "originalName": "diverse_showcase_24.jpg",
+    "fileName": "diverse_showcase_24.jpg",
+    "relPath": "assets/images/fb_diverse_showcase/diverse_showcase_24.jpg",
+    "size": 390374,
+    "title": "跨領域美感教育卓越領航計畫亮點成果展現",
+    "categoryTag": "成果專題記錄",
+    "description": "教育部跨領域美感教育卓越領航計畫亮點成果，展現美數融通的典範課程樣貌。",
+    "displayOrder": 24
+  },
+  {
+    "id": "fb_diverse_25",
+    "categoryId": "fb_diverse_showcase",
+    "categoryName": "多元跨域學習成果(FB)",
+    "folder": "20260609多元×跨領域學習成果展(FB帖文)",
+    "originalName": "diverse_showcase_25.jpg",
+    "fileName": "diverse_showcase_25.jpg",
+    "relPath": "assets/images/fb_diverse_showcase/diverse_showcase_25.jpg",
+    "size": 416796,
+    "title": "永貞國小六甲實力班全體心血結晶圓滿典藏",
+    "categoryTag": "成果專題記錄",
+    "description": "珍藏永貞六甲114學年度最具代表性的成果篇章，為美感探索旅程畫下璀璨里程碑。",
+    "displayOrder": 25
   }
 ]
 };
