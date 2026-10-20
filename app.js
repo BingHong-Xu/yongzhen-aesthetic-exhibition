@@ -2,10 +2,21 @@
  * 永貞國小114跨領域美感教育成果展 - 前端核心交互控制器 3.0 (RWD & Touch Enhanced)
  */
 
-document.addEventListener('DOMContentLoaded', () => {
-  // 1. 初始化資料庫
-  const exhibitData = window.EXHIBIT_DATA || { gallery: [], videos: [] };
-  const allWorks = exhibitData.gallery || [];
+document.addEventListener('DOMContentLoaded', async () => {
+  // 1. 初始化資料庫（雙重備援：支援 window.EXHIBIT_DATA 或 fetch 載入）
+  let exhibitData = window.EXHIBIT_DATA || null;
+  let allWorks = (exhibitData && exhibitData.gallery) ? exhibitData.gallery : [];
+
+  if (allWorks.length === 0) {
+    try {
+      const res = await fetch('assets/gallery_catalog.json');
+      if (res.ok) {
+        allWorks = await res.json();
+      }
+    } catch (e) {
+      console.warn('Fallback fetch failed, waiting for script load:', e);
+    }
+  }
   
   // 狀態管理
   let currentMasterHub = 'all';
@@ -383,12 +394,11 @@ document.addEventListener('DOMContentLoaded', () => {
       const diffX = touchEndX - touchStartX;
       const diffY = touchEndY - touchStartY;
 
-      // 檢查是否為水平滑動（避免垂直滾動干擾）
       if (Math.abs(diffX) > Math.abs(diffY) && Math.abs(diffX) > 45) {
         if (diffX < 0) {
-          nextLightbox(); // 向左滑 -> 下一張
+          nextLightbox();
         } else {
-          prevLightbox(); // 向右滑 -> 上一張
+          prevLightbox();
         }
       }
     }, { passive: true });
