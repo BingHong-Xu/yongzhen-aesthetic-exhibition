@@ -1,17 +1,24 @@
 /**
  * 永貞國小114跨領域美感教育成果展 - 展覽資料庫
- * 更新於 2026-10-20T15:55:44.348Z
+ * 更新於 2026-10-20T16:02:39.080Z
  * 個資清理：0 手機、0 Email
  * 圖片清理：無重複、無 QRcode
- * 新增：Facebook 卓越領航計畫小發表（清華大學羅仕龍教授指導）24張高解析相片
+ * 新增：Facebook 卓越領航計畫小發表（清華大學羅仕龍教授指導）24張高解析相片 + 精彩花絮篇 (Reels HD影片)
  */
 window.EXHIBIT_DATA = {
   stats: {
-    totalWorks: 313,
+    totalWorks: 314,
     categoriesCount: 18,
-    videosCount: 3
+    videosCount: 4
   },
   videos: [
+  {
+    "title": "卓越領航計畫小發表 · 精彩花絮篇 (Reels)",
+    "fileName": "fb_reel_showcase_highlight.mp4",
+    "relPath": "assets/videos/fb_reel_showcase_highlight.mp4",
+    "thumbnail": "assets/images/fb_reel_thumbnail.jpg",
+    "sizeMB": "4.85"
+  },
   {
     "title": "正四面體光影實驗實錄",
     "fileName": "tetrahedron_light_experiment.mp4",
@@ -4413,6 +4420,22 @@ window.EXHIBIT_DATA = {
     "categoryTag": "美感永續實踐",
     "description": "透過社群分享與校內成果發表，將永貞國小跨領域美感的創新能量傳遞給更多教育夥伴。",
     "displayOrder": 24
+  },
+  {
+    "id": "fb_reel_1",
+    "categoryId": "fb_showcase",
+    "categoryName": "卓越領航小發表(FB帖文)",
+    "folder": "2026跨領域美感卓越領航計畫小發表(FB帖文)",
+    "originalName": "fb_reel_花絮篇.mp4",
+    "fileName": "fb_reel_thumbnail.jpg",
+    "relPath": "assets/images/fb_reel_thumbnail.jpg",
+    "videoRelPath": "assets/videos/fb_reel_showcase_highlight.mp4",
+    "size": 5088653,
+    "title": "卓越領航計畫小發表 · 精彩花絮篇 (Reels 影音)",
+    "categoryTag": "精選動態影音",
+    "description": "清華大學羅仕龍教授蒞校說課指導「美數．數美」小發表現場動態精華花絮（22秒HD高畫質紀錄）。",
+    "displayOrder": 25,
+    "isVideo": true
   }
 ]
 };

@@ -280,9 +280,10 @@ document.addEventListener('DOMContentLoaded', async () => {
         <div class="art-image-holder">
           <span class="art-tag-badge">${work.categoryTag}</span>
           <img src="${work.relPath}" alt="${work.title}" class="art-thumbnail" loading="lazy">
+          ${work.videoRelPath ? '<div class="art-video-badge" style="position:absolute; bottom:10px; right:10px; background:rgba(0,0,0,0.78); color:#fff; border-radius:20px; padding:3px 10px; font-size:0.75rem; display:flex; align-items:center; gap:5px; z-index:2; border:1px solid rgba(255,255,255,0.2);">▶ 精彩動態影音</div>' : ''}
           <div class="art-hover-overlay">
-            <div class="art-zoom-btn" title="鑑賞作品">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+            <div class="art-zoom-btn" title="${work.videoRelPath ? '觀看精彩影音' : '鑑賞作品'}">
+              ${work.videoRelPath ? '<svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>' : '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>'}
             </div>
           </div>
         </div>
@@ -293,6 +294,20 @@ document.addEventListener('DOMContentLoaded', async () => {
       `;
 
       card.addEventListener('click', () => {
+        if (work.videoRelPath) {
+          const cinema = document.getElementById('cinema');
+          if (cinema) {
+            cinema.scrollIntoView({ behavior: 'smooth' });
+            mainVideoPlayer.src = work.videoRelPath;
+            mainVideoPlayer.play().catch(() => {});
+            playlistItems.forEach(i => {
+              if (i.dataset.src === work.videoRelPath) i.classList.add('active');
+              else i.classList.remove('active');
+            });
+            playChime(659.25, 0.15);
+            return;
+          }
+        }
         openLightbox(globalIndex);
       });
 
