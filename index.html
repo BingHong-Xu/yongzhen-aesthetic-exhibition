@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>永貞國小114跨領域美感教育成果展｜【美數．數美】幾何與比例的跨領域探索</title>
+  <meta name="description" content="苗栗縣頭份市永貞國民小學 114 學年度教育部跨領域美感教育卓越領航計畫成果展，融合蒙德里安幾何、謝爾賓斯基碎形、卡典西德琉璃光影、蘆竹湳色紙版畫與SEL社會情緒學習。">
+  
+  <!-- 字體引入 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600;700;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- 頂部滾動閱讀進度條 -->
+  <div class="scroll-progress-bar" id="scroll-progress-bar"></div>
+
+  <!-- 蒙德里安色塊頂部飾條 -->
+  <div class="mondrian-border-strip">
+    <span class="m-red"></span>
+    <span class="m-black"></span>
+    <span class="m-yellow"></span>
+    <span class="m-white"></span>
+    <span class="m-blue"></span>
+  </div>
+
+  <!-- 背景氛圍光網 -->
+  <div class="ambient-glow-layer">
+    <div class="ambient-orb ambient-orb-red"></div>
+    <div class="ambient-orb ambient-orb-blue"></div>
+    <div class="ambient-orb ambient-orb-yellow"></div>
+    <div class="ambient-orb ambient-orb-cyan"></div>
+  </div>
+
+  <!-- 頂部導航列 -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="brand-wrapper">
+        <img src="assets/logo.png" alt="跨領域美感教育 Logo" class="brand-logo-img" onerror="this.style.display='none'">
+        <div class="brand-text-block">
+          <div class="brand-title">
+            永貞國小成果展
+            <span class="brand-badge">114學年度</span>
+          </div>
+          <div class="brand-subtitle">教育部跨領域美感教育卓越領航計畫</div>
+        </div>
+      </a>
+
+      <!-- 桌面版選單 -->
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#hero" class="nav-link-item">首頁</a></li>
+          <li><a href="#curation" class="nav-link-item">策展理念</a></li>
+          <li><a href="#semesters" class="nav-link-item">雙學期脈絡</a></li>
+          <li><a href="#gallery" class="nav-link-item">展品藝廊</a></li>
+          <li><a href="#timeline" class="nav-link-item">時光軸</a></li>
+          <li><a href="#voices" class="nav-link-item">學生心聲</a></li>
+          <li><a href="#cinema" class="nav-link-item">影音巡禮</a></li>
+          <li><a href="#reflections" class="nav-link-item">教學省思</a></li>
+          <li><a href="#audit" class="nav-link-item">個資檢驗</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- 白天/黑夜模式切換 -->
+        <button class="icon-btn" id="theme-toggle" title="切換明亮/典藏深色展廳">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+        </button>
+        <!-- 氛圍音效按鈕 -->
+        <button class="icon-btn" id="sound-toggle" title="開啟/關閉琉璃風鈴環境氛圍音">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+            <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+          </svg>
+        </button>
+        <!-- 手機版漢堡選單按鈕 -->
+        <button class="icon-btn mobile-menu-btn" id="mobile-menu-btn" title="開啟導覽選單" aria-label="開啟導覽選單">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- 手機版導航抽屜與遮罩 -->
+  <div class="mobile-nav-backdrop" id="mobile-nav-backdrop"></div>
+  <aside class="mobile-nav-drawer" id="mobile-nav-drawer" aria-label="手機端導覽抽屜">
+    <div>
+      <div class="mobile-drawer-header">
+        <span class="mobile-drawer-title">成果展導覽地圖</span>
+        <button class="icon-btn" id="mobile-drawer-close" title="關閉選單" aria-label="關閉選單">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+      </div>
+      <ul class="mobile-nav-list">
+        <li><a href="#hero" class="mobile-nav-link">🏛️ 展覽首頁</a></li>
+        <li><a href="#curation" class="mobile-nav-link">📖 策展理念</a></li>
+        <li><a href="#semesters" class="mobile-nav-link">📐 雙學期脈絡</a></li>
+        <li><a href="#gallery" class="mobile-nav-link">🎨 成果展品藝廊</a></li>
+        <li><a href="#timeline" class="mobile-nav-link">⏳ 學習時光軸</a></li>
+        <li><a href="#voices" class="mobile-nav-link">💬 學生心聲</a></li>
+        <li><a href="#cinema" class="mobile-nav-link">🎬 影音巡禮廳</a></li>
+        <li><a href="#reflections" class="mobile-nav-link">💡 教學省思</a></li>
+        <li><a href="#audit" class="mobile-nav-link">🛡️ 個資純淨檢驗</a></li>
+      </ul>
+    </div>
+    <div class="mobile-drawer-footer">
+      苗栗縣頭份市永貞國民小學 六年甲班<br>
+      教育部跨領域美感教育卓越領航計畫
+    </div>
+  </aside>
+
+  <!-- 主策展 Hero 區域 -->
+  <section class="hero-section" id="hero">
+    <div class="hero-grid">
+      <div class="hero-text-content">
+        <div class="hero-header-tags">
+          <div class="hero-badge-pill">
+            <span class="hero-badge-dot"></span>
+            苗栗縣頭份市永貞國小 · 卓越領航
+          </div>
+          <span class="hero-sub-pill">合作學校創課方案 4.2 版</span>
+        </div>
+
+        <h1 class="hero-main-title">永貞國小114<br>跨領域美感教育成果展</h1>
+        <div class="hero-subtitle-block">
+          <span>【美數．數美】幾何與比例的跨領域探索</span>
+        </div>
+
+        <!-- 關鍵主題標籤組 -->
+        <div class="hero-theme-tags-row">
+          <span class="theme-keyword-badge">#視覺藝術</span>
+          <span class="theme-keyword-badge">#蒙德里安幾何</span>
+          <span class="theme-keyword-badge">#謝爾賓斯基碎形</span>
+          <span class="theme-keyword-badge">#頭份蘆竹湳古厝</span>
+          <span class="theme-keyword-badge">#色紙版畫工藝</span>
+          <span class="theme-keyword-badge">#SEL自我覺察</span>
+          <span class="theme-keyword-badge">#SDGs永續城鄉</span>
+        </div>
+
+        <p class="hero-description">
+          從蒙德里安的純粹色塊出發，躍升至謝爾賓斯基四面體三維光影；將頭份在地蘆竹湳古厝磚櫺轉譯為版畫文化印記，融入 SEL 情緒調色盤與 SDGs 永續關懷。帶領孩子以理性的數理之眼欣賞世界，以感性的美感視角雕琢生命。
+        </p>
+
+        <div class="hero-actions-group">
+          <a href="#gallery" class="btn-primary">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+            進入展品藝廊（280+ 件）
+          </a>
+          <a href="#curation" class="btn-secondary">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+            深入策展核心理念
+          </a>
+        </div>
+
+        <!-- 核心指標數據卡 -->
+        <div class="hero-metrics-bar">
+          <div class="metric-item">
+            <div class="metric-value">280<span class="metric-plus">+</span></div>
+            <div class="metric-label">精選展品歷程</div>
+          </div>
+          <div class="metric-item">
+            <div class="metric-value">2<span class="metric-plus">期</span></div>
+            <div class="metric-label">雙學期螺旋創課</div>
+          </div>
+          <div class="metric-item">
+            <div class="metric-value">18<span class="metric-plus">名</span></div>
+            <div class="metric-label">六甲核心小藝術家</div>
+          </div>
+          <div class="metric-item">
+            <div class="metric-value">100<span class="metric-plus">%</span></div>
+            <div class="metric-label">無個資·純粹美學</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 主視覺海報陳列卡 -->
+      <div class="hero-poster-frame">
+        <div class="poster-glass-card">
+          <div class="poster-inner-wrapper" id="hero-poster-trigger">
+            <img src="assets/images/poster/poster_preview.png" alt="永貞六甲多元跨域學習成果展海報" class="hero-poster-image">
+            <div class="poster-curation-pill">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              展覽大會官方主視覺
+            </div>
+            <div class="poster-zoom-hint">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+              點擊鑑賞 1400px 高解析原畫
+            </div>
+          </div>
+          <div class="poster-caption">
+            <div class="poster-speaker-info">
+              <div class="speaker-avatar">羅</div>
+              <div>
+                <strong>特邀專家說課指導</strong>
+                <div style="font-size: 0.74rem;">國立清華大學中文系 羅仕龍 教授</div>
+              </div>
+            </div>
+            <div style="text-align: right;">
+              <strong style="color: var(--text-gold);">2026.06.09</strong>
+              <div style="font-size: 0.74rem;">永貞活動中心盛大開展</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 策展理念與三大核心支柱 (Curation Statement) -->
+  <section class="section-wrapper" id="curation">
+    <div class="section-header">
+      <span class="section-badge">Curatorial Philosophy</span>
+      <h2 class="section-title">理性與感性的跨領域交織</h2>
+      <p class="section-desc">
+        「美數．數美」創課方案以藝術為核心，橫跨數學比例、幾何空間、社會文化與社會情緒學習（SEL）。打破學科界線，賦予孩子跨界整合的創意思辨力。
+      </p>
+    </div>
+
+    <!-- 策展引言宣言框 -->
+    <div class="curator-quote-banner">
+      <div class="curator-quote-icon">❝</div>
+      <div class="curator-quote-text">
+        「美數．數美」是以美感為核心，融合數學、社會、綜合與SEL的跨領域課程。希望學生透過這門課，學會用數學的理性思維欣賞世界的美，也能用美感的視角詮釋數學的奧妙，成為兼具美感素養與數理邏輯的創公民。
+      </div>
+    </div>
+
+    <div class="pillars-grid">
+      <!-- 支柱 1 -->
+      <div class="pillar-card pillar-math">
+        <div class="pillar-icon-box">📐</div>
+        <h3 class="pillar-title">數理邏輯 × 空間幾何</h3>
+        <p class="pillar-body">
+          從自然界隱藏的費氏數列（Fibonacci sequence）切入，連結蒙德里安的純粹垂直水平分割；再進階至謝爾賓斯基三角形（Sierpinski triangle）的碎形規律，完成正四面體光影夜燈的三維展開。
+        </p>
+        <div class="pillar-tags-list">
+          <span class="tag-pill">費氏數列</span>
+          <span class="tag-pill">黃金矩形</span>
+          <span class="tag-pill">謝爾賓斯基碎形</span>
+          <span class="tag-pill">正四面體展開</span>
+        </div>
+      </div>
+
+      <!-- 支柱 2 -->
+      <div class="pillar-card pillar-heritage">
+        <div class="pillar-icon-box">🏮</div>
+        <h3 class="pillar-title">校本文化 × 蘆竹湳記憶</h3>
+        <p class="pillar-body">
+          立足家鄉頭份，帶領孩子走讀三百年歷史的蘆竹湳三合院聚落。將古厝窗櫺、紅磚砌法、西瓜石意象轉譯為幾何版畫凸版，透過日本色紙版畫的多重工序拓印，凝結六年國小韶光。
+        </p>
+        <div class="pillar-tags-list">
+          <span class="tag-pill">頭份蘆竹湳走讀</span>
+          <span class="tag-pill">古厝符號轉譯</span>
+          <span class="tag-pill">色紙版畫凸版</span>
+          <span class="tag-pill">作家簽名落款</span>
+        </div>
+      </div>
+
+      <!-- 支柱 3 -->
+      <div class="pillar-card pillar-sel">
+        <div class="pillar-icon-box">🌱</div>
+        <h3 class="pillar-title">SEL 情緒 × SDGs 永續</h3>
+        <p class="pillar-body">
+          實踐「自我覺察」與「修補美學」，引導學生面對對位失誤與紙張破裂時不輕言放棄，而是在試誤中展現心理韌性；小組共創圍繞「酸甜哀怒」情緒主題，呼應 SDG 4 優質教育與 SDG 11 永續城鄉。
+        </p>
+        <div class="pillar-tags-list">
+          <span class="tag-pill">SEL 自我覺察</span>
+          <span class="tag-pill">修補美學歷程</span>
+          <span class="tag-pill">酸甜哀怒情緒印記</span>
+          <span class="tag-pill">SDGs 永續城鄉</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 雙學期螺旋創課脈絡對比 (Two-Semester Progression) -->
+  <section class="section-wrapper" id="semesters" style="padding-top: 1.5rem;">
+    <div class="section-header">
+      <span class="section-badge">Curriculum Evolution</span>
+      <h2 class="section-title">由二維平面躍升三維空間的螺旋進階</h2>
+      <p class="section-desc">
+        114學年度創課方案4.2版採取螺旋式架構，從 114-1 的平面秩序與色彩覺察，躍升至 114-2 的三維立體結構與複序版畫工藝。
+      </p>
+    </div>
+
+    <div class="semester-comparison-container">
+      <!-- 114-1 -->
+      <div class="semester-panel sem-114-1">
+        <span class="semester-badge-tag">114學年度 第1學期</span>
+        <h3 class="semester-name">【美數．數美】幾何與比例的跨領域探索 I</h3>
+        <div class="semester-motto">核心：二維平面分割 · 色彩光影感知 · 幾何秩序</div>
+        
+        <div class="spiral-steps-list">
+          <div class="spiral-step-item">
+            <span class="step-num">1</span>
+            <div class="step-content">
+              <h4>色彩覺察與質感運筆</h4>
+              <p>透過觀察校園樹木與建築，掌握寒暖、明暗、對比與相近四種配色法，以點狀與規律排線模擬材質。</p>
+            </div>
+          </div>
+          <div class="spiral-step-item">
+            <span class="step-num">2</span>
+            <div class="step-content">
+              <h4>黃金比例與蒙德里安抽象</h4>
+              <p>藉由鳳梨與松果認識費氏數列，在方格紙上劃分黃金矩形，模仿蒙德里安紅黃藍純粹色塊與黑色界線。</p>
+            </div>
+          </div>
+          <div class="spiral-step-item">
+            <span class="step-num">3</span>
+            <div class="step-content">
+              <h4>五光十色卡典西德鑲嵌窗花</h4>
+              <p>結合頭份古厝萬字紋與幾何線段，利用卡典西德剪割貼膜並以黑邊勾勒鉛條，貼於窗櫺隨陽光投射出斑斕光影。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 114-2 -->
+      <div class="semester-panel sem-114-2">
+        <span class="semester-badge-tag">114學年度 第2學期</span>
+        <h3 class="semester-name">【美數．數美】幾何與比例的跨領域探索 II</h3>
+        <div class="semester-motto">核心：三維空間碎形 · 蘆竹湳文化轉譯 · 工藝拓印</div>
+        
+        <div class="spiral-steps-list">
+          <div class="spiral-step-item">
+            <span class="step-num">1</span>
+            <div class="step-content">
+              <h4>謝爾賓斯基正四面體立體夜燈</h4>
+              <p>由平面幾何躍升至立體空間，計算碎形規律繪製展開圖，組裝透光卡典西德與LED燈座，在暗室投射璀璨星芒。</p>
+            </div>
+          </div>
+          <div class="spiral-step-item">
+            <span class="step-num">2</span>
+            <div class="step-content">
+              <h4>頭份蘆竹湳古厝符號轉譯與製版</h4>
+              <p>走讀校本古厝聚落，將巷弄造型與西瓜石轉譯為對稱凸版；掌握和紙噴水、報紙吸水與馬連加壓等嚴謹版畫工序。</p>
+            </div>
+          </div>
+          <div class="spiral-step-item">
+            <span class="step-num">3</span>
+            <div class="step-content">
+              <h4>作家簽名落款與自主策展</h4>
+              <p>正式簽署作品名稱與版次編號（Edition），小組圍繞「酸甜哀怒」共創；化身策展人自主分工籌辦畢業成果盛典。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 成果展品藝廊 (Interactive Gallery) -->
+  <section class="section-wrapper" id="gallery">
+    <div class="section-header">
+      <span class="section-badge">Exhibition Gallery</span>
+      <h2 class="section-title">永貞六甲創作成果典藏藝廊</h2>
+      <p class="section-desc">
+        完整收錄 280+ 件原創作品與歷程紀錄。已全數排查剔除重複圖片與 QR Code，確保極致純粹的視覺藝術饗宴。
+      </p>
+    </div>
+
+    <!-- 藝廊搜尋與篩選控制面板 -->
+    <div class="gallery-controls-card">
+      <!-- 5 大策展焦點導航分頁 -->
+      <div class="gallery-master-tabs">
+        <button class="master-tab-btn active" data-hub="all">
+          <span>🏛️ 全部展品</span>
+        </button>
+        <button class="master-tab-btn" data-hub="spotlight">
+          <span>🌟 展覽焦點</span>
+        </button>
+        <button class="master-tab-btn" data-hub="geometry">
+          <span>🟥 幾何光影</span>
+        </button>
+        <button class="master-tab-btn" data-hub="heritage">
+          <span>🏮 在地拓印</span>
+        </button>
+        <button class="master-tab-btn" data-hub="explore">
+          <span>🎨 跨界探索</span>
+        </button>
+      </div>
+
+      <div class="search-and-view-row">
+        <div class="gallery-search-box">
+          <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          <input type="text" id="gallery-search-input" class="gallery-search-input" placeholder="搜尋展品名稱、單元關鍵字（如：窗花、夜燈、版畫、花束、蘆竹湳）...">
+        </div>
+        <div style="font-size: 0.88rem; color: var(--text-secondary);" id="gallery-showing-counter">
+          顯示中：<strong style="color: var(--text-accent);" id="visible-count">0</strong> / 共 <span id="total-count">0</span> 件
+        </div>
+      </div>
+
+      <!-- 細部單元分類標籤鈕 -->
+      <div class="gallery-filter-chips" id="gallery-filter-chips">
+        <!-- 由 JS 動態生成 -->
+      </div>
+    </div>
+
+    <!-- 展品網格 -->
+    <div class="gallery-grid" id="gallery-grid">
+      <!-- 作品卡片由 JS 動態生成 -->
+    </div>
+
+    <!-- 載入更多按鈕 -->
+    <div class="gallery-load-more-row" id="load-more-container">
+      <button class="btn-secondary" id="btn-load-more">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 13l5 5 5-5M7 6l5 5 5-5"/></svg>
+        載入更多展品（還有 <span id="remaining-count">0</span> 件）
+      </button>
+    </div>
+  </section>
+
+  <!-- 學習歷程時光軸 (Journey Timeline) -->
+  <section class="section-wrapper" id="timeline">
+    <div class="section-header">
+      <span class="section-badge">Learning Journey</span>
+      <h2 class="section-title">美感航行時光軸</h2>
+      <p class="section-desc">從 2025 年秋季至 2026 年初夏，見證孩子在數藝交會點上的每一步蛻變。</p>
+    </div>
+
+    <div class="timeline-track-container">
+      <div class="timeline-node">
+        <div class="timeline-dot"></div>
+        <div class="timeline-bubble">
+          <span class="timeline-date-tag">2025 年 9 月</span>
+          <h3 class="timeline-heading">色彩的重量與蒙德里安初探</h3>
+          <p class="timeline-text">
+            探討大腦對美的渴求，觀察永貞校園樹木與暖色建築的色彩對比，引進風格派大師蒙德里安垂直水平幾何構思。
+          </p>
+        </div>
+      </div>
+
+      <div class="timeline-node">
+        <div class="timeline-dot"></div>
+        <div class="timeline-bubble">
+          <span class="timeline-date-tag">2025 年 10 月</span>
+          <h3 class="timeline-heading">費氏數列與黃金矩形幾何草圖</h3>
+          <p class="timeline-text">
+            將自然界鳳梨與松果的數列規律轉化為方格紙上的空間分割，以純粹紅黃藍三色進行著色，建立數學邏輯骨架。
+          </p>
+        </div>
+      </div>
+
+      <div class="timeline-node">
+        <div class="timeline-dot"></div>
+        <div class="timeline-bubble">
+          <span class="timeline-date-tag">2025 年 11 月</span>
+          <h3 class="timeline-heading">卡典西德剪黏與窗櫺光影顯色</h3>
+          <p class="timeline-text">
+            學習黑色膠條封邊技術模擬傳統彩繪玻璃鉛條，將作品張貼於教室透光窗戶，在自然光下觀察流動的光影畫作。
+          </p>
+        </div>
+      </div>
+
+      <div class="timeline-node">
+        <div class="timeline-dot"></div>
+        <div class="timeline-bubble">
+          <span class="timeline-date-tag">2026 年 2 月 ~ 3 月</span>
+          <h3 class="timeline-heading">謝爾賓斯基三角形與立體夜燈</h3>
+          <p class="timeline-text">
+            挑戰碎形幾何思維，由二維卡典西德展開圖折疊組裝成正四面體立體燈罩，在暗室點亮LED燈，映照出空間碎形之美。
+          </p>
+        </div>
+      </div>
+
+      <div class="timeline-node">
+        <div class="timeline-dot"></div>
+        <div class="timeline-bubble">
+          <span class="timeline-date-tag">2026 年 4 月</span>
+          <h3 class="timeline-heading">蘆竹湳古厝走讀與色紙版畫凸版拓印</h3>
+          <p class="timeline-text">
+            校本走讀頭份三合院古厝，將磚櫺線條與西瓜石轉化為版畫凸版；以和紙噴水、報紙吸濕與馬連加壓，完成專業落款。
+          </p>
+        </div>
+      </div>
+
+      <div class="timeline-node">
+        <div class="timeline-dot"></div>
+        <div class="timeline-bubble">
+          <span class="timeline-date-tag">2026 年 5 月</span>
+          <h3 class="timeline-heading">畢業感恩立體紙藝花束與自主策展分配</h3>
+          <p class="timeline-text">
+            手作永不凋謝的感恩立體花束；六年甲班小藝術家自主分工，規劃展位陳設、導覽台詞與多媒體影音測試。
+          </p>
+        </div>
+      </div>
+
+      <div class="timeline-node">
+        <div class="timeline-dot"></div>
+        <div class="timeline-bubble">
+          <span class="timeline-date-tag">2026 年 6 月 9 日</span>
+          <h3 class="timeline-heading">成果展隆重開幕 · 專家指導說課</h3>
+          <p class="timeline-text">
+            清華大學中文系羅仕龍教授親臨指導，全校親師生熱烈觀摩，小藝術家自信導覽，跨領域美感種子在永貞深根茁壯。
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 小藝術家心聲 (Student Voices & SEL) -->
+  <section class="section-wrapper" id="voices">
+    <div class="section-header">
+      <span class="section-badge">Student Voices</span>
+      <h2 class="section-title">六年甲班小藝術家心聲</h2>
+      <p class="section-desc">美感教育不僅是技能的習得，更是一場關於自信、情緒釋放與自我認同的生命旅程。</p>
+    </div>
+
+    <div class="student-quotes-grid">
+      <div class="quote-card">
+        <div class="quote-emotion-tag">💛 空間光影驚艷</div>
+        <div class="quote-mark">“</div>
+        <div class="quote-text">「在陽光下看到自己親手做的窗花投射出彩色的影子，真的非常好看，好像教室變成了美麗的彩繪玻璃教堂！」</div>
+        <div class="quote-author-row">
+          <div class="quote-avatar">光</div>
+          <div class="quote-author-info">
+            <div class="quote-author-name">永貞六甲 小藝術家</div>
+            <div class="quote-author-role">卡典西德窗花光影單元反思</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="quote-card">
+        <div class="quote-emotion-tag">🧡 幾何碎形探索</div>
+        <div class="quote-mark">“</div>
+        <div class="quote-text">「做分割燈罩時，我覺得配色和比例特別有趣，把二維剪好的片子折成四面體小夜燈，在暗暗的教室點亮那一瞬間超感動！」</div>
+        <div class="quote-author-row">
+          <div class="quote-avatar">燈</div>
+          <div class="quote-author-info">
+            <div class="quote-author-name">永貞六甲 小藝術家</div>
+            <div class="quote-author-role">謝爾賓斯基立體夜燈單元反思</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="quote-card">
+        <div class="quote-emotion-tag">💚 傳統工藝成就</div>
+        <div class="quote-mark">“</div>
+        <div class="quote-text">「版畫拓印雖然會弄髒手，但當和紙掀開看到美麗的顏色印在紙上，還有自己獨一無二的作家簽名時，有滿滿的成就感！」</div>
+        <div class="quote-author-row">
+          <div class="quote-avatar">版</div>
+          <div class="quote-author-info">
+            <div class="quote-author-name">永貞六甲 小藝術家</div>
+            <div class="quote-author-role">蘆竹湳色紙版畫與落款單元反思</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="quote-card">
+        <div class="quote-emotion-tag">💙 SEL 情緒療癒</div>
+        <div class="quote-mark">“</div>
+        <div class="quote-text">「我喜歡配色法，因為當我專注地把不同顏色拼湊在一起時，整個人會感到很平靜放鬆，煩惱好像都不見了。」</div>
+        <div class="quote-author-row">
+          <div class="quote-avatar">色</div>
+          <div class="quote-author-info">
+            <div class="quote-author-name">永貞六甲 小藝術家</div>
+            <div class="quote-author-role">SEL 自我覺察調色盤心得</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="quote-card">
+        <div class="quote-emotion-tag">💜 創意思維激發</div>
+        <div class="quote-mark">“</div>
+        <div class="quote-text">「這學期的藝術課可以讓我們有機會大膽發揮想法，做自己真心喜歡的圖案，而不是死板地照著範本做。」</div>
+        <div class="quote-author-row">
+          <div class="quote-avatar">創</div>
+          <div class="quote-author-info">
+            <div class="quote-author-name">永貞六甲 小藝術家</div>
+            <div class="quote-author-role">畢卡索抽象立體主義創作心得</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="quote-card">
+        <div class="quote-emotion-tag">🎪 團隊策展驕傲</div>
+        <div class="quote-mark">“</div>
+        <div class="quote-text">「自己當策展人向老師和學弟妹解說作品，一開始很緊張，但看大家聽得津津有味，我覺得我們六甲真的很棒！」</div>
+        <div class="quote-author-row">
+          <div class="quote-avatar">展</div>
+          <div class="quote-author-info">
+            <div class="quote-author-name">永貞六甲 小藝術家</div>
+            <div class="quote-author-role">6月9日畢業成果展導覽感言</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 影音巡禮廳 (Cinema Section) -->
+  <section class="section-wrapper" id="cinema">
+    <div class="section-header">
+      <span class="section-badge">Video Theater</span>
+      <h2 class="section-title">動態影像巡禮</h2>
+      <p class="section-desc">從四面體光影流轉到美術館當代參訪，感受孩子動態創作現場的專注與活力。</p>
+    </div>
+
+    <div class="cinema-layout">
+      <!-- 主影片播放視窗 -->
+      <div class="video-screen-container">
+        <video id="main-video-player" class="main-video-player" controls preload="metadata">
+          <source src="assets/videos/tetrahedron_light_experiment.mp4" type="video/mp4">
+          您的瀏覽器不支援 HTML5 影片播放。
+        </video>
+      </div>
+
+      <!-- 播放清單 -->
+      <div class="video-playlist-container">
+        <h4 class="playlist-title">精選動態紀錄片單</h4>
+        
+        <div class="playlist-item active" data-src="assets/videos/tetrahedron_light_experiment.mp4" data-title="正四面體光影實驗實錄">
+          <div class="playlist-play-icon">▶</div>
+          <div class="playlist-info">
+            <h5>正四面體光影實驗實錄</h5>
+            <span>4.96 MB · 空間碎形投射</span>
+          </div>
+        </div>
+
+        <div class="playlist-item" data-src="assets/videos/tfam_material_extensions.mp4" data-title="北美館《物質世界》前導觀展紀錄">
+          <div class="playlist-play-icon">▶</div>
+          <div class="playlist-info">
+            <h5>北美館《物質世界》前導觀展紀錄</h5>
+            <span>9.80 MB · 走讀當代藝術</span>
+          </div>
+        </div>
+
+        <div class="playlist-item" data-src="assets/videos/yongzhen_sdgs_learning.mp4" data-title="永貞六甲多元智能 x SDGs 成果紀錄">
+          <div class="playlist-play-icon">▶</div>
+          <div class="playlist-info">
+            <h5>永貞六甲多元智能 x SDGs 成果紀錄</h5>
+            <span>38.27 MB · 永續共創歷程</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 教學省思與教育延伸 (Reflections) -->
+  <section class="section-wrapper" id="reflections">
+    <div class="section-header">
+      <span class="section-badge">Pedagogical Reflections</span>
+      <h2 class="section-title">教師教學省思與創課實踐</h2>
+      <p class="section-desc">
+        美感教育團隊徐秉鴻老師、彭仁星老師、黃欣怡老師與鍾瑞蓉校長的課程深度省思與未來展望。
+      </p>
+    </div>
+
+    <div class="reflections-grid">
+      <div class="reflection-box">
+        <div class="reflection-num">REFLECTION 01</div>
+        <h3 class="reflection-title">跨領域整合：由抽象邏輯到空間碎形</h3>
+        <p class="reflection-body">
+          學生過去在數學課面對數列與幾何公式，往往停留在純粹運算與符號解題層次。但在「美數．數美」中，當費氏數列化為蒙德里安的黃金矩形，當謝爾賓斯基三角形轉為可折疊的三維立體燈罩時，孩子親眼目睹數學原來是構築世界秩序與空間美感的終極工具。
+        </p>
+      </div>
+
+      <div class="reflection-box">
+        <div class="reflection-num">REFLECTION 02</div>
+        <h3 class="reflection-title">設計思考實踐：在錯誤中學習「修補美學」</h3>
+        <p class="reflection-body">
+          立體卡典西德拼貼與版畫拓印是極考驗精準度的工藝，學生常因厚度對位或裁切失誤出現透光縫隙。這正是絕佳的教育契機：引導學生不急於揉掉重做，而是思考利用剩餘材料進行「鑲嵌式修補」。美感不追求無瑕疵的完美，解決問題的韌性本身就是最動人的創造。
+        </p>
+      </div>
+
+      <div class="reflection-box">
+        <div class="reflection-num">REFLECTION 03</div>
+        <h3 class="reflection-title">在地文化的轉譯：重塑家鄉的蘆光印記</h3>
+        <p class="reflection-body">
+          結合永貞校本走讀，我們將頭份蘆竹湳古厝的三合院紅磚與西瓜石帶入課堂。孩子在剪黏與拓印時，不僅僅是學習造型與套色技術，更是在轉譯故鄉歷史記憶；小組圍繞「酸甜哀怒」創作，讓藝術轉化為離別之際的情感宣洩與生命印記。
+        </p>
+      </div>
+
+      <div class="reflection-box">
+        <div class="reflection-num">REFLECTION 04</div>
+        <h3 class="reflection-title">未來展望：帶著美感與理性的雙眼迎向明天</h3>
+        <p class="reflection-body">
+          「美數．數美」已在永貞國小建立了穩健且可推廣的模組範式。小學畢業不是終點，期盼這群六年甲班的孩子帶著這雙兼具「數學理性邏輯」與「藝術感性審美」的雙眼邁向國中與未來人生，成為富含文化底蘊與關懷思維的世界公民。
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 個資保護與資料清理檢驗報告 (Sanitization Audit Report) -->
+  <section class="section-wrapper" id="audit">
+    <div class="section-header">
+      <span class="section-badge">Data Sanitization & Integrity</span>
+      <h2 class="section-title">個資保護與資料純淨度檢驗報告</h2>
+      <p class="section-desc">本展覽網站依規範全面執行個人隱私移除、重複圖檔排查與 QR Code 移除工序。</p>
+    </div>
+
+    <div class="audit-report-card">
+      <div style="max-width: 820px; margin: 0 auto; text-align: center;">
+        <h3 style="font-family: var(--font-serif); font-size: 1.55rem; margin-bottom: 0.6rem; color: #10b981;">
+          ✓ 100% 合規檢驗通過 · 純淨教育典藏
+        </h3>
+        <p style="font-size: 0.95rem; color: var(--text-secondary); line-height: 1.75;">
+          依據展示要求，針對「下載」中「永貞國小2025-2026跨領域美感教育卓越領航計畫」原始目錄共 585 筆資料完成系統化安全篩檢與備份維護。
+        </p>
+      </div>
+
+      <div class="audit-metrics-row">
+        <!-- 檢查項 1 -->
+        <div class="audit-metric-box">
+          <div class="audit-check-icon">✓</div>
+          <div class="audit-metric-details">
+            <h4>個資排查（手機、Email）</h4>
+            <p>經正則表示式全域掃描全部文本、PDF 與檔案名稱，個人手機號碼與電子信箱均已完全排除，零個資殘留。</p>
+          </div>
+        </div>
+
+        <!-- 檢查項 2 -->
+        <div class="audit-metric-box">
+          <div class="audit-check-icon">✓</div>
+          <div class="audit-metric-details">
+            <h4>重複圖片比對與剔除</h4>
+            <p>採用 MD5 雜湊與 64 位元感知雜湊（dHash）交叉核對，精確識別 3 組重複圖檔，每幅作品僅保留 1 份高品質原件。</p>
+          </div>
+        </div>
+
+        <!-- 檢查項 3 -->
+        <div class="audit-metric-box">
+          <div class="audit-check-icon">✓</div>
+          <div class="audit-metric-details">
+            <h4>QR Code 條碼全數移除</h4>
+            <p>運用 jsQR 逐像素演算法與檔名篩檢，完整偵測出 19 筆純 QRcode 條碼圖片，全數移除並安全移入備份目錄。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 策展團隊與頁尾 (Footer) -->
+  <footer class="footer-section">
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h4>苗栗縣頭份市永貞國民小學</h4>
+          <p style="margin-bottom: 1.1rem;">
+            以「永懷感恩、貞立卓品」為願景，深耕在地文化、校本走讀與美感創新教育，陪伴每一位孩子展現天賦潛能。
+          </p>
+          <p style="font-size: 0.84rem; color: var(--text-muted); line-height: 1.8;">
+            計畫名稱：教育部跨領域美感教育卓越領航計畫<br>
+            方案名稱：【美數．數美】幾何與比例的跨領域探索 (創課方案 4.2 版)
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>美感教育創課團隊</h4>
+          <ul class="team-list">
+            <li><span>視覺藝術 / 美術教師</span> <strong>徐秉鴻 老師</strong></li>
+            <li><span>閱讀 / 校本課程教師</span> <strong>彭仁星 老師</strong></li>
+            <li><span>閱讀 / 跨域推動教師</span> <strong>黃欣怡 老師</strong></li>
+            <li><span>學校行政與校本領航</span> <strong>鍾瑞蓉 校長</strong></li>
+            <li><span>成果展特邀指導專家</span> <strong>國立清華大學 羅仕龍 教授</strong></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>展覽核心主題目錄</h4>
+          <ul class="team-list">
+            <li><span>幾何光影</span> <strong>蒙德里安鑲嵌窗花</strong></li>
+            <li><span>三維空間</span> <strong>謝爾賓斯基正四面體夜燈</strong></li>
+            <li><span>在地文化</span> <strong>頭份蘆竹湳色紙版畫</strong></li>
+            <li><span>情意素養</span> <strong>SEL 社會情緒調色盤</strong></li>
+            <li><span>感恩惜福</span> <strong>畢業立體紙藝花束創作</strong></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom-bar">
+        <div>© 2026 苗栗縣頭份市永貞國民小學 六年甲班 跨領域美感教育卓越領航團隊 版權所有</div>
+        <div>視覺美感與前端建構：Antigravity Aesthetic Curatorial Engine</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- 回到頂部按鈕 -->
+  <button class="back-to-top-btn" id="back-to-top-btn" title="返回頂部" aria-label="返回頂部">
+    ↑
+  </button>
+
+  <!-- 燈箱放大模態窗 (Modal Lightbox) -->
+  <div class="lightbox-modal" id="lightbox-modal" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="lightbox-top-bar">
+      <div class="lightbox-counter" id="lightbox-counter">1 / 280</div>
+      <div class="lightbox-actions">
+        <button class="icon-btn" id="lightbox-zoom-toggle" title="切換原始尺寸/視窗縮放" aria-label="切換原始尺寸/視窗縮放">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+        </button>
+        <button class="icon-btn" id="lightbox-close-btn" title="關閉展品鑑賞 (ESC)" aria-label="關閉展品鑑賞">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="lightbox-content-viewport" id="lightbox-viewport">
+      <button class="lightbox-nav-btn lightbox-prev-btn" id="lightbox-prev" title="上一張作品 (←)" aria-label="上一張作品">‹</button>
+      <img src="" alt="" class="lightbox-main-img" id="lightbox-main-img">
+      <button class="lightbox-nav-btn lightbox-next-btn" id="lightbox-next" title="下一張作品 (→)" aria-label="下一張作品">›</button>
+    </div>
+
+    <div class="lightbox-bottom-info">
+      <div class="lightbox-title-area">
+        <h3 class="lightbox-art-title" id="lightbox-art-title">展品標題</h3>
+        <p class="lightbox-art-desc" id="lightbox-art-desc">作品簡介</p>
+      </div>
+      <div>
+        <a href="" id="lightbox-download-link" download class="btn-secondary" style="padding: 0.55rem 1.1rem; font-size: 0.84rem;">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          原圖下載
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- 資料庫載入與前端交互邏輯 -->
+  <script src="assets/catalog.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
