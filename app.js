@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   // 大分類聚合映射 (Master Hub Mapping)
   const masterHubMappings = {
     all: null, // 全部
-    spotlight: ['poster', 'exhibit_day', 'exhibit_prep'],
+    spotlight: ['poster', 'fb_showcase', 'exhibit_day', 'exhibit_prep'],
     geometry: ['mondrian', 'tetrahedron', 'lamp3d', 'lampshade_build', 'light_shadow'],
     heritage: ['printmaking', 'printmaking_color', 'signing', 'classroom_sel'],
     explore: ['picasso', 'flowers', 'flowers_show', 'tfam', 'activity_log']
@@ -162,6 +162,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   const categoryMasterDefinitions = [
     { id: 'all', name: '全部展品' },
     { id: 'poster', name: '展覽主視覺', hub: 'spotlight' },
+    { id: 'fb_showcase', name: '卓越領航小發表(FB)', hub: 'spotlight' },
     { id: 'exhibit_day', name: '成果展盛況', hub: 'spotlight' },
     { id: 'exhibit_prep', name: '籌備與布展', hub: 'spotlight' },
     { id: 'mondrian', name: '蒙德里安窗花', hub: 'geometry' },
